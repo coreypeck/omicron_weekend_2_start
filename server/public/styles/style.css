@@ -1,0 +1,40 @@
+body{
+background-color: black;
+width: 585px;
+}
+#personHome{
+  background-color: silver;
+}
+.person{
+  height: 100px;
+  overflow: scroll;
+  background-color: silver;
+  padding: 15px 15px 0px 15px;
+}
+#active {
+  background-color: red;
+}
+.button{
+  margin-top: 15px;
+}
+.square {
+  height: 10px;
+  width: 10px;
+  background-color: black;
+  border: 2px solid silver;
+  display: inline-block;
+  margin: 15px 2.5px 0px 2.5px;
+}
+h1 {
+  border: 2px solid silver;
+  text-align: center;
+  background-color: black;
+  color: silver;
+  margin-bottom: 0px;
+}
+#boxHome{
+  margin: 0px 125px 0px 125px;
+}
+#buttonHome{
+  margin: 0px 240px 0px 240px;
+}
