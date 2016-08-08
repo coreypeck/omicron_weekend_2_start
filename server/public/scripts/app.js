@@ -8,7 +8,7 @@ $(document).ready(function() {
             $middleman = $el;
             $(".person").fadeOut("fast", function() {
                 getBoxes();
-                $(".person").replaceWith("<div class='person'>" + "Student Name: " + $middleman[counter].name + "<p class='personUsername'>Github Account: <a href='https://github.com/" + $middleman[counter].git_username + "'>'https://github.com/" + $middleman[counter].git_username + "'</a><p class='personShoutout'>Personal Message: " + $middleman[counter].shoutout + "</p></p></div>");
+                $(".person").replaceWith("<div class='person'>" + "Student Name: " + $middleman[counter].name + "<p class='personUsername'>Github Account: <a href='https://github.com/" + $middleman[counter].git_username + "'>https://github.com/" + $middleman[counter].git_username + "</a><p class='personShoutout'>Personal Message: " + $middleman[counter].shoutout + "</p></p></div>");
                 $(".person").hide().fadeIn("fast");
                 $("#Next").focus();
             });
@@ -26,7 +26,7 @@ var timer;
 //function that replaces the person with the appropriate one based on which button was hit
 function replace() {
     $(".person").fadeOut("fast", function() {
-        $(".person").replaceWith("<div class='person'>" + "Student Name: " + $middleman[counter].name + "<p class='personUsername'>Github Account: <a href='https://github.com/" + $middleman[counter].git_username + "'>'https://github.com/" + $middleman[counter].git_username + "'</a><p class='personShoutout'>Personal Message: " + $middleman[counter].shoutout + "</p></p></div>");
+        $(".person").replaceWith("<div class='person'>" + "Student Name: " + $middleman[counter].name + "<p class='personUsername'>Github Account: <a href='https://github.com/" + $middleman[counter].git_username + "'>https://github.com/" + $middleman[counter].git_username + "</a><p class='personShoutout'>Personal Message: " + $middleman[counter].shoutout + "</p></p></div>");
         $(".person").hide().fadeIn("fast");
     });
 }
@@ -62,7 +62,7 @@ function autoSwitch() {
     movingForward();
     checkCounter();
     $(".person").fadeOut("fast", function() {
-        $(".person").replaceWith("<div class='person'>" + "Student Name: " + $middleman[counter].name + "<p class='personUsername'>Github Account: <a href='https://github.com/" + $middleman[counter].git_username + "'>'https://github.com/'" + $middleman[counter].git_username + "'</a><p class='personShoutout'>Personal Message: " + $middleman[counter].shoutout + "</p></p></div>");
+        $(".person").replaceWith("<div class='person'>" + "Student Name: " + $middleman[counter].name + "<p class='personUsername'>Github Account: <a href='https://github.com/" + $middleman[counter].git_username + "'>https://github.com/" + $middleman[counter].git_username + "</a><p class='personShoutout'>Personal Message: " + $middleman[counter].shoutout + "</p></p></div>");
         $(".person").hide().fadeIn("fast");
     });
     timer = setTimeout(autoSwitch, 10000);
